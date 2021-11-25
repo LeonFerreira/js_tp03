@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="app/app.css" />
+  <!-- <link rel="stylesheet" href="app/app.css" /> -->
 </head>
 <body>
-  <button onclick="gerarRelatorio()">Gerar Relatório!</button>
+  
 
-  <!-- <div id="q1"></div>
-  <div id="q2"></div> -->
+  <div id="q1">
+    <h1>Questão 01</h1>
+    <form>
+      <label for="valorMin">Valor Mínimo:</label><br>
+      <input type="number" id="valorMin"><br>
+      <label for="valorMax">Valor Máximo:</label><br>
+      <input type="number" id="valorMax"><br>
+      <button onclick="calcularValor()">Calcular</button>
+      <div id="resultado_mixmax"></div>
+    </form>
+  </div>
+
+  <div id="q2"></div>
+
   <div id="q3">
-    <h1>Notas</h1>
+    <h1>Questão 03</h1>
+    <button onclick="gerarRelatorio()">Gerar Relatório!</button>
+    <h2>Notas dos Alunos</h2>
     <div>
         <table id="tabela">
           <tr>
@@ -22,15 +36,18 @@
       <div id="resultado"></div>
     </div>
   </div>
-  <!-- <div id="q4"></div>
-  <div id="q5"></div>
-  <div id="q6"></div> -->
 
-  <!-- <script src="q1.js"></script>
-  <script src="q2.js"></script> -->
+  <div id="q4"></div>
+
+  <div id="q5"></div>
+
+  <div id="q6"></div>
+
+  <script src="q1.js"></script>
+  <script src="q2.js"></script>
   <script src="q3.js"></script>
-  <!-- <script src="q4.js"></script>
+  <script src="q4.js"></script>
   <script src="q5.js"></script>
-  <script src="q6.js"></script> -->
+  <script src="q6.js"></script>
 </body>
 </html>
